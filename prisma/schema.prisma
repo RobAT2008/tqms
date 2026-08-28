@@ -1,0 +1,207 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ==================== ADMIN / AUTH ====================
+
+enum AdminRole {
+  SUPERADMIN
+  ADMIN
+  VIEWER
+}
+
+model Admin {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String
+  fullName     String
+  role         AdminRole @default(ADMIN)
+  isActive     Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  auditLogs    AuditLog[]
+
+  @@index([email])
+}
+
+// ==================== GEOGRAFİYA ====================
+
+model Region {
+  id        String     @id @default(cuid())
+  name      String     @unique // Bakı şəhəri, Gəncə şəhəri, Sumqayıt şəhəri, ...
+  isCity    Boolean    @default(false)
+  districts District[]
+  addresses Address[]
+  institutions EducationInstitution[]
+
+  @@index([name])
+}
+
+model District {
+  id        String   @id @default(cuid())
+  name      String   // Nərimanov rayonu, Yasamal rayonu ...
+  regionId  String
+  region    Region   @relation(fields: [regionId], references: [id], onDelete: Cascade)
+  addresses Address[]
+  institutions EducationInstitution[]
+
+  @@unique([regionId, name])
+  @@index([regionId])
+}
+
+model Address {
+  id          String   @id @default(cuid())
+  regionId    String
+  region      Region   @relation(fields: [regionId], references: [id])
+  districtId  String?
+  district    District? @relation(fields: [districtId], references: [id])
+  street      String   // küçə / prospekt / qəsəbə / kənd
+  building    String   // ev / bina / mənzil
+  createdAt   DateTime @default(now())
+
+  registrationFor Student[] @relation("RegistrationAddress")
+  actualFor       Student[] @relation("ActualAddress")
+
+  @@index([regionId])
+  @@index([districtId])
+}
+
+// ==================== TƏHSİL MÜƏSSİSƏLƏRİ ====================
+
+enum InstitutionCategory {
+  GENERAL   // Ümumi təhsil: tam orta məktəb, gimnaziya, lisey
+  VET       // Peşə təhsili: peşə məktəbi, peşə liseyi, peşə təhsil mərkəzi
+  SPECIAL   // Orta ixtisas: kollec, texnikum
+}
+
+enum InstitutionType {
+  TAM_ORTA_MEKTEB
+  GIMNAZIYA
+  LISEY
+  PESE_MEKTEBI
+  PESE_LISEYI
+  PESE_TEHSIL_MERKEZI
+  KOLLEC
+  TEXNIKUM
+}
+
+model EducationInstitution {
+  id          String   @id @default(cuid())
+  name        String
+  category    InstitutionCategory
+  type        InstitutionType
+  regionId    String
+  region      Region   @relation(fields: [regionId], references: [id])
+  districtId  String?
+  district    District? @relation(fields: [districtId], references: [id])
+  address     String?
+  phone       String?
+  source      String?  // məlumatın mənbəyi, məs. edu.gov.az
+  sourceUpdatedAt DateTime?
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  students    Student[]
+
+  @@unique([name, type, regionId, districtId])
+  @@index([type])
+  @@index([regionId])
+  @@index([districtId])
+  @@index([category])
+}
+
+// ==================== TƏLƏBƏ ====================
+
+enum EducationLevel {
+  TAM_ORTA_MEKTEB
+  UMUMI_ORTA_MEKTEB
+  KOLLEC
+  PESE_MEKTEBI
+  PESE_LISEYI
+  PESE_TEHSIL_MERKEZI
+}
+
+model Parent {
+  id           String  @id @default(cuid())
+  fullName     String
+  phone        String
+  workplace    String?
+  relationType String? // "ata", "ana" və ya digər qohumluq əlaqəsi (yaxın qohum üçün)
+
+  fatherOf     Student[] @relation("Father")
+  motherOf     Student[] @relation("Mother")
+  relativeOf   Student[] @relation("Relative")
+}
+
+model Student {
+  id                     String   @id @default(cuid())
+  registrationCode       String   @unique // STU-2026-000123
+
+  // Şəxsi məlumatlar
+  firstName              String
+  lastName               String
+  fatherName             String
+  fin                    String   @unique
+  birthDate              DateTime
+  personalPhone          String
+
+  // Valideynlər / əlaqə
+  fatherId               String?
+  father                 Parent?  @relation("Father", fields: [fatherId], references: [id])
+  motherId               String?
+  mother                 Parent?  @relation("Mother", fields: [motherId], references: [id])
+  relativeId              String?
+  relative                Parent?  @relation("Relative", fields: [relativeId], references: [id])
+
+  // Təhsil
+  educationLevel         EducationLevel
+  educationInstitutionId String
+  educationInstitution   EducationInstitution @relation(fields: [educationInstitutionId], references: [id])
+  graduationYear         Int
+
+  // Ünvanlar
+  registrationAddressId  String
+  registrationAddress    Address @relation("RegistrationAddress", fields: [registrationAddressId], references: [id])
+  actualAddressId        String
+  actualAddress          Address @relation("ActualAddress", fields: [actualAddressId], references: [id])
+
+  // Razılıq
+  consentGiven           Boolean  @default(false)
+  consentAt              DateTime?
+
+  isArchived             Boolean  @default(false)
+
+  createdAt              DateTime @default(now())
+  updatedAt              DateTime @updatedAt
+
+  auditLogs              AuditLog[]
+
+  @@index([fin])
+  @@index([lastName])
+  @@index([personalPhone])
+  @@index([educationInstitutionId])
+  @@index([graduationYear])
+  @@index([createdAt])
+}
+
+// ==================== AUDIT LOG ====================
+
+model AuditLog {
+  id         String   @id @default(cuid())
+  studentId  String
+  student    Student  @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  adminId    String
+  admin      Admin    @relation(fields: [adminId], references: [id])
+  action     String   // CREATE, UPDATE, ARCHIVE
+  changes    Json     // { field: { old, new } }
+  createdAt  DateTime @default(now())
+
+  @@index([studentId])
+  @@index([adminId])
+}

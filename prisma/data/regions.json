@@ -1,0 +1,348 @@
+[
+  {
+    "name": "Bakı şəhəri",
+    "isCity": true,
+    "districts": [
+      "Binəqədi rayonu",
+      "Xətai rayonu",
+      "Xəzər rayonu",
+      "Qaradağ rayonu",
+      "Nərimanov rayonu",
+      "Nəsimi rayonu",
+      "Nizami rayonu",
+      "Pirallahı rayonu",
+      "Sabunçu rayonu",
+      "Səbail rayonu",
+      "Suraxanı rayonu",
+      "Yasamal rayonu"
+    ]
+  },
+  {
+    "name": "Gəncə şəhəri",
+    "isCity": true,
+    "districts": [
+      "Kəpəz rayonu",
+      "Nizami rayonu (Gəncə)"
+    ]
+  },
+  {
+    "name": "Sumqayıt şəhəri",
+    "isCity": true,
+    "districts": []
+  },
+  {
+    "name": "Mingəçevir şəhəri",
+    "isCity": true,
+    "districts": []
+  },
+  {
+    "name": "Naxçıvan şəhəri",
+    "isCity": true,
+    "districts": []
+  },
+  {
+    "name": "Şirvan şəhəri",
+    "isCity": true,
+    "districts": []
+  },
+  {
+    "name": "Yevlax şəhəri",
+    "isCity": true,
+    "districts": []
+  },
+  {
+    "name": "Naftalan şəhəri",
+    "isCity": true,
+    "districts": []
+  },
+  {
+    "name": "Xankəndi şəhəri",
+    "isCity": true,
+    "districts": []
+  },
+  {
+    "name": "Abşeron rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Ağcabədi rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Ağdam rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Ağdaş rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Ağstafa rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Ağsu rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Astara rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Balakən rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Beyləqan rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Bərdə rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Biləsuvar rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Cəbrayıl rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Cəlilabad rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Daşkəsən rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Füzuli rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Gədəbəy rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Goranboy rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Göyçay rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Göygöl rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Hacıqabul rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "İmişli rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "İsmayıllı rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Kəlbəcər rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Kürdəmir rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Qax rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Qazax rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Qəbələ rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Qobustan rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Quba rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Qubadlı rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Qusar rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Laçın rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Lənkəran rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Lerik rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Masallı rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Neftçala rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Oğuz rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Saatlı rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Sabirabad rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Salyan rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Samux rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Siyəzən rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Şabran rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Şamaxı rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Şəki rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Şəmkir rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Tərtər rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Tovuz rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Ucar rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Xaçmaz rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Xızı rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Xocalı rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Xocavənd rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Yardımlı rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Zaqatala rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Zəngilan rayonu",
+    "isCity": false,
+    "districts": []
+  },
+  {
+    "name": "Zərdab rayonu",
+    "isCity": false,
+    "districts": []
+  }
+]

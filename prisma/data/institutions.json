@@ -1,0 +1,26 @@
+[
+  { "name": "Heydər Əliyev adına lisey", "type": "LISEY", "category": "GENERAL", "region": "Bakı şəhəri", "district": "Xətai rayonu", "address": "Xətai rayonu, Natiq Əliyev küçəsi, 50", "source": "edu.gov.az", "sourceUpdatedAt": "2026-08-01" },
+  { "name": "Akademik Zərifə Əliyeva adına lisey", "type": "LISEY", "category": "GENERAL", "region": "Bakı şəhəri", "district": "Yasamal rayonu", "address": "Yasamal rayonu, H.Cavid prospekti, 253-cü məhəllə", "source": "edu.gov.az", "sourceUpdatedAt": "2026-08-01" },
+  { "name": "T.İsmayılov adına 6 nömrəli məktəb-Lisey", "type": "LISEY", "category": "GENERAL", "region": "Bakı şəhəri", "district": "Səbail rayonu", "address": "Səbail rayonu, Şövkət Ələkbərova küçəsi 35", "source": "edu.gov.az", "sourceUpdatedAt": "2026-08-01" },
+  { "name": "132-134 nömrəli Təhsil Kompleksi", "type": "TAM_ORTA_MEKTEB", "category": "GENERAL", "region": "Bakı şəhəri", "district": "Səbail rayonu", "address": "Səbail rayonu, İstiqlaliyyət küçəsi 51", "source": "edu.gov.az", "sourceUpdatedAt": "2026-08-01" },
+  { "name": "T.Həsənov adına 23 nömrəli tam orta məktəb", "type": "TAM_ORTA_MEKTEB", "category": "GENERAL", "region": "Bakı şəhəri", "district": "Nəsimi rayonu", "address": "Nəsimi rayonu, 28 May küçəsi 16", "source": "edu.gov.az", "sourceUpdatedAt": "2026-08-01" },
+  { "name": "1 nömrəli tam orta məktəb", "type": "TAM_ORTA_MEKTEB", "category": "GENERAL", "region": "Gəncə şəhəri", "district": null, "address": "Gəncə şəhəri, Mərkəz", "source": "edu.gov.az", "sourceUpdatedAt": "2026-08-01" },
+  { "name": "6 nömrəli tam orta məktəb", "type": "TAM_ORTA_MEKTEB", "category": "GENERAL", "region": "Sumqayıt şəhəri", "district": null, "address": "Sumqayıt şəhəri", "source": "edu.gov.az", "sourceUpdatedAt": "2026-08-01" },
+  { "name": "3 nömrəli gimnaziya", "type": "GIMNAZIYA", "category": "GENERAL", "region": "Şəki rayonu", "district": null, "address": "Şəki şəhəri", "source": "edu.gov.az", "sourceUpdatedAt": "2026-08-01" },
+
+  { "name": "Bakı Dövlət Peşə Təhsil Mərkəzi", "type": "PESE_TEHSIL_MERKEZI", "category": "VET", "region": "Bakı şəhəri", "district": "Nərimanov rayonu", "address": "Nərimanov rayonu, Bakı", "source": "vet.edu.gov.az", "sourceUpdatedAt": "2026-08-01" },
+  { "name": "Sumqayıt Peşə Təhsil Mərkəzi", "type": "PESE_TEHSIL_MERKEZI", "category": "VET", "region": "Sumqayıt şəhəri", "district": null, "address": "Sumqayıt şəhəri", "source": "vet.edu.gov.az", "sourceUpdatedAt": "2026-08-01" },
+  { "name": "Gəncə Dövlət Peşə Təhsil Mərkəzi", "type": "PESE_TEHSIL_MERKEZI", "category": "VET", "region": "Gəncə şəhəri", "district": null, "address": "Gəncə şəhəri", "source": "vet.edu.gov.az", "sourceUpdatedAt": "2026-08-01" },
+  { "name": "Bakı Peşə Liseyi No.1", "type": "PESE_LISEYI", "category": "VET", "region": "Bakı şəhəri", "district": "Binəqədi rayonu", "address": "Binəqədi rayonu, Bakı", "source": "vet.edu.gov.az", "sourceUpdatedAt": "2026-08-01" },
+  { "name": "Sumqayıt Peşə Liseyi", "type": "PESE_LISEYI", "category": "VET", "region": "Sumqayıt şəhəri", "district": null, "address": "Sumqayıt şəhəri", "source": "vet.edu.gov.az", "sourceUpdatedAt": "2026-08-01" },
+  { "name": "Bakı Sənaye Peşə Məktəbi", "type": "PESE_MEKTEBI", "category": "VET", "region": "Bakı şəhəri", "district": "Suraxanı rayonu", "address": "Suraxanı rayonu, Bakı", "source": "vet.edu.gov.az", "sourceUpdatedAt": "2026-08-01" },
+  { "name": "Gəncə Peşə Məktəbi", "type": "PESE_MEKTEBI", "category": "VET", "region": "Gəncə şəhəri", "district": null, "address": "Gəncə şəhəri", "source": "vet.edu.gov.az", "sourceUpdatedAt": "2026-08-01" },
+
+  { "name": "Bakı Texniki Kolleci", "type": "KOLLEC", "category": "SPECIAL", "region": "Bakı şəhəri", "district": "Nizami rayonu", "address": "Q. Qarayev küçəsi 2B", "source": "edu.gov.az", "sourceUpdatedAt": "2026-08-01" },
+  { "name": "Bakı Dövlət Kolleci", "type": "KOLLEC", "category": "SPECIAL", "region": "Bakı şəhəri", "district": "Nəsimi rayonu", "address": "Nəsimi rayonu, Bakı", "source": "edu.gov.az", "sourceUpdatedAt": "2026-08-01" },
+  { "name": "Gəncə Dövlət Kolleci", "type": "KOLLEC", "category": "SPECIAL", "region": "Gəncə şəhəri", "district": null, "address": "Gəncə şəhəri", "source": "edu.gov.az", "sourceUpdatedAt": "2026-08-01" },
+  { "name": "Sumqayıt Dövlət Texniki Kolleci", "type": "TEXNIKUM", "category": "SPECIAL", "region": "Sumqayıt şəhəri", "district": null, "address": "Sumqayıt şəhəri", "source": "edu.gov.az", "sourceUpdatedAt": "2026-08-01" },
+  { "name": "Naxçıvan Dövlət Kolleci", "type": "KOLLEC", "category": "SPECIAL", "region": "Naxçıvan şəhəri", "district": null, "address": "Naxçıvan şəhəri", "source": "edu.gov.az", "sourceUpdatedAt": "2026-08-01" },
+  { "name": "Lənkəran Dövlət Kolleci", "type": "KOLLEC", "category": "SPECIAL", "region": "Lənkəran rayonu", "district": null, "address": "Lənkəran şəhəri", "source": "edu.gov.az", "sourceUpdatedAt": "2026-08-01" },
+  { "name": "Şəki Texnikumu", "type": "TEXNIKUM", "category": "SPECIAL", "region": "Şəki rayonu", "district": null, "address": "Şəki şəhəri", "source": "edu.gov.az", "sourceUpdatedAt": "2026-08-01" }
+]
